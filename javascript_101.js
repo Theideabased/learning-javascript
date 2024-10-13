@@ -248,3 +248,7 @@ function checkSign(num) {
 //you can even use .filter to filter an array in a function
 // ...args is the on that will recieve numbers of argument and return the result
 // arr2 = [...arr1] is the same as copy in python
+
+const greeting = `Hello, my name is ${4+4} just
+too funny to have things going on here ${9**2}`
+console.log(greeting)
