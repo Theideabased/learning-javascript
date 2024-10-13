@@ -108,17 +108,17 @@ function trueofFalse(wasThatTrue){
 
 // same as the strict not equal and strict not equal
 
-if (val <= 50 && val >= 40) { //This is a for and operator
-    return "yes"
-}
+// if (val <= 50 && val >= 40) { //This is a for and operator
+//     return "yes"
+// }
 
-if (val <= 50 || val <=30) { //This is for the or operator
-    return "No"
-} else if( val < 4) {
-    return "yes"
-} else {
-    return "who cares"
-}// this about the other cause ones the first loop is done it is not going to check the other code
+// if (val <= 50 || val <=30) { //This is for the or operator
+//     return "No"
+// } else if( val < 4) {
+//     return "yes"
+// } else {
+//     return "who cares"
+// }// this about the other cause ones the first loop is done it is not going to check the other code
 
 
 var num = 6
@@ -130,3 +130,121 @@ if (num < 5){
     return "Huge"
 }
 
+//golf code
+var names = ['Eagle', 'Par']
+function golfScore(par, strokes){
+    if (strokes == 1){
+        return names[0]
+    }else if (strokes <= par -2) {
+    return names[1]
+    }
+}
+
+// switch statements
+function caseInSwitch(val){
+    var answer ="";
+    switch(val) {
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "beta";
+            break;
+        case 4:
+            answer = "beta";
+            break;
+        default:
+        answer = "stuff";
+        break;
+    }
+    return answer;
+}
+
+// You can use either if or switch as you which
+
+// you can return the boolean as the case may be 
+
+
+// counting function code
+var count = 0;
+function cc(card){
+    switch(card){
+        case 2:
+    }
+    return "Change Me"
+}
+
+//object in javascript are like dictionary in python
+// you can use the dot notation to add and change properties
+// you will use delete to delete element in the object
+
+var myObj = {
+    gift: "pony",
+    pet: "kitten",
+    bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+    if (myObj.hasOwnProperty(checkProp)) {
+        return myObj[checkProp]
+    }else {
+        return "Not found"
+    }
+}
+
+// using while loops 
+var thisList = [];
+var i = 0;
+while(i < 5) {
+    thisList.push(i)
+    i++;
+}
+// for loop is also used
+for (var i = 0; i < 5; i++){
+    thisList.push(i);
+}
+
+//Looping through and array with a for loop in javascript
+var myArr = [2,3,4,5,6];
+for (var i = 0; i < ourArray.length; i++){
+    total += myArr[i]
+} 
+
+
+// Do while loop
+
+//Math.random() this will give a random fraction
+// Math.floor(Math.random() * 10) this will approximate to the nearest whole number from 0 to 9
+// for a range of number let us randomize the number
+function randomRange(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+
+}
+
+// using the parseInt function
+function convertToInteger(str) {
+    return parseInt(str)
+}
+// using the radix with the parseInt for the base
+function convertToInteger(str) {
+    return parseInt(str, 2)//this will parse the interger as base two
+}
+
+// using the tenary operation
+function checkSign(num) {
+    return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+}
+
+// Different btw let and var
+// let will not allow you do declare a statement twice
+// You cannot reassign a const 
+// Eventhough const is not assignable it can actually be mutated
+
+// Object.freze(variable) will not allow the object to be mutable
+
+//you can even use .filter to filter an array in a function
+// ...args is the on that will recieve numbers of argument and return the result
+// arr2 = [...arr1] is the same as copy in python
